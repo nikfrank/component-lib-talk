@@ -1,0 +1,59 @@
+{
+  "name": "component-lib-boilerplate",
+  "version": "0.0.0",
+  "description": "component lib boilerplate with build command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b": "babel -d dist/ src/ --copy-files && rm ./dist/*~",
+    "build": "rm -rf ./dist && npm run b"
+  },
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachumFreedman/logo.git"
+  },
+  "keywords": ["react", "component", "lib"],
+  "author": "nik frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikfrank/component-lib-boilerplate/issues"
+  },
+
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-cli": "^6.14.0",
+    "babel-jest": "^22.0.4",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-react-constant-elements": "^6.9.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": "> 0.25%, not dead"
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+      "babel-plugin-syntax-trailing-function-commas",
+      "babel-plugin-transform-class-properties",
+      "babel-plugin-transform-object-rest-spread",
+      "babel-plugin-transform-react-constant-elements"
+    ]
+  }
+}
