@@ -18,9 +18,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -29,4 +26,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.quotation {
+  display: flex;
+  flex-direction: row;
+}
+
+.talking-head {
+  height: 200px;
+  width: auto;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #c7dcde;
+  border-radius: .4em;
+  color: black;
+  padding: 10px;
+  max-width: 180px;
+  word-break: break-word;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #c7dcde;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
 }
